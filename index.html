@@ -1,0 +1,53 @@
+---
+layout: home
+---
+
+<div class="page-content">
+
+    <div class="heading">
+        <h2>Converting caffeine and metal into code since 1985</h2>
+        <img class="me-img" src="{{ site.baseurl}}/img/me.jpg">
+
+        <p>
+            <a class="" href="https://github.com/{{ site.github_username }}">
+                <img class="social-img" src="{{ site.baseurl}}/img/github.png">
+            </a>
+            <a class="" href="https://twitter.com/{{ site.twitter_username }}">
+                <img class="social-img" src="{{ site.baseurl}}/img/twitter.png">
+            </a>
+
+            <a class="" href="{{ "/feed.xml" | prepend: site.baseurl }}">
+                <img class="social-img" src="{{ site.baseurl}}/img/rss.png">
+            </a>
+
+        </p>
+
+    </div>
+    
+    <div class="wrap">
+
+        <div class="home">
+
+
+            <h1>Blog Posts</h1>
+
+            <ul class="posts">
+                {% for post in site.posts %}
+                <li>
+                    <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+                    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                    <p>
+                        {{ post.content | strip_html | truncatewords:50}} 
+                        <a href="{{ post.url }}">Read more...</a><br><br>
+                    </p>
+                </li>
+                {% endfor %}
+            </ul>
+
+
+        </div>
+
+    </div>
+</div>
+
+

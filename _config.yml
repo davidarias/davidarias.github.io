@@ -1,0 +1,13 @@
+# Site settings
+title: "{ David Arias }"
+email: your-email@domain.com
+description: "Personal site of David Arias"
+baseurl: ""
+url: "http://yourdomain.com"
+twitter_username: DarthCoder1011
+github_username:  davidarias
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+future: True
