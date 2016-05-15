@@ -251,6 +251,10 @@ a:hover   { color: #ff9b00; text-decoration: none; }
     padding: 30px 0;
 }
 
+.post h1{
+    font-size: 25px;
+}
+
 .post-header { margin: 10px 0 30px; }
 
 .post-header h1 {
