@@ -4,14 +4,21 @@ title: Projects
 permalink: /projects/
 ---
 
-# CCS Simple Grid
+## JediScript
+
+A simple lisp interpreter with clojure-like syntax. [Check the source code in github.](https://github.com/davidarias/jediscript)
+
+
+------------------
+
+## CCS Simple Grid
 
 A very simple 12 columns 100% with flex grid. Check the [Demo](http://www.davidarias.net/css-simple-grid/example.html)
 and the [source code](https://github.com/davidarias/css-simple-grid)
 
 -------------------
 
-# Shooting game
+## Shooting game
 
 A very simple browser game for my JavaScript workshops in [Barcelona Code School](http://www.wbarcelonacodeschool.com/). Check the [Demo](http://www.davidarias.net/shooting-game)
 and the [source code](https://github.com/davidarias/shooting-game)
