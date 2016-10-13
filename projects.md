@@ -11,10 +11,10 @@ A simple lisp interpreter with clojure-like syntax. [Check the source code in gi
 
 ------------------
 
-## CCS Simple Grid
+## Simple Responsive Grid
 
-A very simple 12 columns 100% with flex grid. Check the [Demo](http://www.davidarias.net/css-simple-grid/example.html)
-and the [source code](https://github.com/davidarias/css-simple-grid)
+A very simple 12 columns responsive CSS grid. Check the [Demo](http://www.davidarias.net/simple-responsive-grid/example.html)
+and the [source code](https://github.com/davidarias/simple-responsive-grid)
 
 -------------------
 
