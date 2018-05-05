@@ -112,6 +112,7 @@ a:hover   { color: #ff9b00; text-decoration: none; }
     letter-spacing: -.5px;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 /* Site footer */
