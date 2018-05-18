@@ -26,6 +26,10 @@ h1, h2, h3, h4, h5, h6 {
 a         { color: #64B2E3; text-decoration: none; transition: all .2s ease-in-out; }
 a:hover   { color: #ff9b00; text-decoration: none; }
 
+b, strong {
+    font-weight: 600;
+}
+
 /* Utility */
 
 .wrap:before,
@@ -39,8 +43,8 @@ a:hover   { color: #ff9b00; text-decoration: none; }
 }
 
 .background-img{
-    float: left;    
-    
+    float: left;
+
 }
 
 /* #fullscreen { */
