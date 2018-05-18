@@ -11,6 +11,12 @@ A Programming Language based on Smalltalk/Self. Check the project in github: **[
 
 ------------------
 
+## Juno
+
+An IDE for Jupiter Programming Language: **[Juno](https://github.com/davidarias/juno)**
+
+------------------
+
 ## JediScript
 
 A simple lisp interpreter with clojure-like syntax. [Check the source code in github.](https://github.com/davidarias/jediscript)
