@@ -23,3 +23,6 @@ some reasons beyond the scope of this article (although [Pharo](https://pharo.or
 has a quite active community), nevertheless, I think we can still learn a lot from this 'old' technologies.
 
 Contributions are very much welcome. Just open a pull request or an issue in Github :)
+
+**Edit 2018-05-18:** Check out the brand new [Juno IDE](https://github.com/davidarias/juno),
+a Smalltalk-like IDE for the Jupiter Programing Language
