@@ -326,6 +326,8 @@ b, strong {
 .post-content ul,
 .post-content ol { padding-left: 20px; }
 
+.post-content img { width: 960px; }
+
 .post pre,
 .post code {
     border: 1px solid #666;
