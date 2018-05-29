@@ -62,7 +62,6 @@ b, strong {
     height: 15px;
     margin-bottom: -2px;
 }
-
 /* Layout Styles */
 /* ----------------------------------------------------------*/
 
@@ -325,8 +324,6 @@ b, strong {
 
 .post-content ul,
 .post-content ol { padding-left: 20px; }
-
-.post-content img { width: 960px; }
 
 .post pre,
 .post code {
