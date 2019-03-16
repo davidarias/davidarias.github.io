@@ -21,6 +21,10 @@ about my professional profile.
 <img class="social-img" src="{{ site.baseurl}}/img/twitter.png">
 </a>
 
+<a class="" href="https://instagram.com/{{ site.instagram_username }}">
+<img class="social-img" src="{{ site.baseurl}}/img/instagram.png">
+</a>
+
 <a class="" href="{{ "/feed.xml" | prepend: site.baseurl }}">
 <img class="social-img" src="{{ site.baseurl}}/img/rss.png">
 </a>

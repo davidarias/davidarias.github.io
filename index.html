@@ -16,6 +16,10 @@ layout: home
                 <img class="social-img" src="{{ site.baseurl}}/img/twitter.png">
             </a>
 
+            <a class="" href="https://instagram.com/{{ site.instagram_username }}">
+              <img class="social-img" src="{{ site.baseurl}}/img/instagram.png">
+            </a>
+
             <a class="" href="{{ "/feed.xml" | prepend: site.baseurl }}">
                 <img class="social-img" src="{{ site.baseurl}}/img/rss.png">
             </a>
@@ -23,7 +27,7 @@ layout: home
         </p>
 
     </div>
-    
+
     <div class="wrap">
 
         <div class="home">
@@ -37,7 +41,7 @@ layout: home
                     <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
                     <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
                     <p>
-                        {{ post.content | strip_html | truncatewords:50}} 
+                        {{ post.content | strip_html | truncatewords:50}}
                         <a href="{{ post.url }}">Read more...</a><br><br>
                     </p>
                 </li>
@@ -49,5 +53,3 @@ layout: home
 
     </div>
 </div>
-
-
