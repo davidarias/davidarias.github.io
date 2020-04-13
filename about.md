@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-<img class="left-img me-img" src="{{ site.baseurl }}/img/me.jpg">
+<img class="left-img me-img-about" src="{{ site.baseurl }}/img/me.jpg">
 Senior developer and technology enthusiast with more than 15 years of experience in several computer
 technology fields, including system administration, programming ( web applications, network services,
 desktop applications... ), design of user interfaces and user experience, cloud computing and scalability.

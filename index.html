@@ -5,7 +5,7 @@ layout: home
 <div class="page-content">
 
     <div class="heading">
-        <h2>Professional programmer. Amateur Photographer. Writer Apprentice.</h2>
+        <h2>Professional programmer. Amateur Photographer. Blogger Apprentice.</h2>
         <img class="me-img" src="{{ site.baseurl}}/img/me.jpg">
 
         <p>
@@ -35,7 +35,7 @@ layout: home
             <ul class="posts">
                 {% for post in paginator.posts %}
                 <li>
-                    <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+                    <span class="post-date">{{ post.date | date: "%b %-d %Y" }}</span>
                     <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
                     <p>
                         {{ post.content | strip_html | truncatewords:50}}

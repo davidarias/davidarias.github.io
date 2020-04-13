@@ -13,7 +13,7 @@ body {
     font-size: 18px;
     line-height: 1.5;
     font-weight: 300;
-    background-color: #fff;
+    background-color: #f4f4f4;
     color: rgba(0,0,0, 0.8);
 }
 
@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a         { color: #64B2E3; text-decoration: none; transition: all .2s ease-in-out; }
-a:hover   { color: #E89B25; text-decoration: none; }
+a:hover   { color: #E34C61; text-decoration: none; }
 
 b, strong {
     font-weight: 600;
@@ -38,7 +38,7 @@ b, strong {
 .wrap:after { clear: both; }
 .wrap {
     max-width: 960px;
-    padding: 0 30px;
+    padding: 0 12px;
     margin: 0 auto;
     zoom: 1;
 }
@@ -47,8 +47,8 @@ b, strong {
 .wrap-header:after { content:""; display:table; }
 .wrap-header:after { clear: both; }
 .wrap-header {
-    max-width: 960px;
-    padding: 0 30px;
+    max-width: 1024px;
+    padding: 0 5px;
     margin: 0 auto;
     zoom: 1;
 }
@@ -83,7 +83,7 @@ b, strong {
 /* Site header */
 
 .site-header {
-    border-bottom: 3px solid #E34C61;
+    border-bottom: 5px solid #E34C61;
     min-height: 56px;
     background-color: #111;
     color: #ebebeb;
@@ -109,7 +109,7 @@ b, strong {
 .site-title:visited {
     display: block;
     color: #fff;
-    font-size: 20px;
+    font-size: 25px;
     float: left;
     line-height: 56px;
     position: relative;
@@ -135,12 +135,16 @@ b, strong {
     font-size: 16px;
 }
 
+.site-nav .active-page{
+    color: #E34C61;
+}
+
 /* Site footer */
 
 .site-footer {
     padding: 30px 0;
     text-align: center;
-    border-top: 1px solid #E34C61;
+    border-top: 1px solid #ddd;
 }
 
 .footer-heading {
@@ -180,7 +184,8 @@ b, strong {
 
 .site-footer li,
 .site-footer p {
-    font-size: 15px;
+    font-size: 14px;
+    margin-bottom: 5px;
 }
 
 .github-icon-svg,
@@ -207,8 +212,11 @@ b, strong {
 
 
 .home{
-    /*text-align: center;*/
-    padding: 30px;
+    padding: 20px 30px;
+    background: #fefefe;
+    margin: 25px 0;
+    border-radius: 4px;
+    box-shadow: 0 0 5px #ccc;
 }
 
 .home h1{
@@ -244,6 +252,13 @@ b, strong {
     border: 3px solid #fff;
 }
 
+.me-img-about{
+
+    height: 150px;
+
+}
+
+
 .left-img{
     float: left;
     margin-right: 15px;
@@ -253,11 +268,11 @@ b, strong {
 
 .posts { list-style-type: none; }
 
-.posts li { margin-bottom: 30px; }
+.posts li { margin-bottom: 30px; border-bottom: 1px solid #ddd;}
 
 .posts .post-link {
-    font-size: 30px;
-    line-height: 1;
+    font-size: 35px;
+    line-height: 1.2;
 }
 
 .posts p{
@@ -266,9 +281,15 @@ b, strong {
 }
 
 .posts .post-date {
-    display: block;
     font-size: 15px;
     color: #818181;
+    margin: 0 10px 0 0;
+    float: left;
+    width: 50px;
+    line-height: 1.1;
+    text-align: center;
+    padding: 5px 10px 5px 5px;
+    border-right: 1px solid #ccc;
 }
 
 
@@ -281,7 +302,11 @@ b, strong {
 }
 
 .post{
-    padding: 30px 0;
+    padding: 20px 30px;
+    background: #fefefe;
+    margin: 25px 0;
+    border-radius: 4px;
+    box-shadow: 0 0 5px #ccc;
 }
 
 .post h1{
@@ -292,7 +317,7 @@ b, strong {
 .post-header { margin: 10px 0 30px; }
 
 .post-header h1 {
-    font-size: 40px;
+    font-size: 35px;
     letter-spacing: -1.75px;
     line-height: 1;
     font-weight: 700;
@@ -301,9 +326,15 @@ b, strong {
 .post-header .meta {
     font-size: 15px;
     color: #818181;
-    margin-top: 5px;
-    text-align: left;
+    margin: 0 10px 0 0;
+    float: left;
+    width: 50px;
+    line-height: 1.1;
+    text-align: center;
+    padding: 5px 10px 5px 5px;
+    border-right: 1px solid #ccc;
 }
+
 
 .post-content { margin: 0 0 30px; }
 
@@ -426,7 +457,10 @@ b, strong {
 /* ----------------------------------------------------------*/
 
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 740px) {
+    body {
+        font-size: 15px;
+    }
 
     .wrap { padding: 0 12px; }
 
@@ -483,9 +517,30 @@ b, strong {
         width: auto;
         margin: 0 0 15px; }
 
+    .posts .post-date, .post-header .meta  {
+        float: none;
+        border: 0;
+        width: 100%;
+        padding: 0;
+        display: block;
+        margin-bottom: 10px;
+    }
+
 }
 
 @media screen and (max-width: 440px) {
+    body {
+        font-size: 13px;
+    }
+    .post-header h1 { font-size: 25px; margin: 10px 0;}
+    .post-content h2 { font-size: 20px; margin: 10px 0;}
+    .post-content h3 { font-size: 18px; margin: 10px 0; }
+    .post-content h4 { font-size: 16px; margin: 10px 0; }
+    .post-content h5 { font-size: 16px; margin: 10px 0; }
+    .post-content h6 { font-size: 16px; margin: 10px 0; }
+    .posts .post-link {
+        font-size: 25px; 
+    }
     .small{
         display:none;
     }
