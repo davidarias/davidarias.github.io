@@ -10,21 +10,22 @@ html, body { height: 100%; }
 
 body {
     font-family: 'Lato', Helvetica, Arial, sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.5;
     font-weight: 300;
-    background-color: #111;
-    color: #ebebeb;
+    background-color: #fff;
+    color: rgba(0,0,0, 0.8);
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
     font-size: 100%;
     font-weight: 700;
+    color: #111;
 }
 
 a         { color: #64B2E3; text-decoration: none; transition: all .2s ease-in-out; }
-a:hover   { color: #ff9b00; text-decoration: none; }
+a:hover   { color: #E89B25; text-decoration: none; }
 
 b, strong {
     font-weight: 600;
@@ -42,35 +43,50 @@ b, strong {
     zoom: 1;
 }
 
+.wrap-header:before,
+.wrap-header:after { content:""; display:table; }
+.wrap-header:after { clear: both; }
+.wrap-header {
+    max-width: 960px;
+    padding: 0 30px;
+    margin: 0 auto;
+    zoom: 1;
+}
+
 .background-img{
     float: left;
 
 }
 
-/* #fullscreen { */
-/*     z-index: -999; */
-/*     min-height: 100%; */
-/*     min-width: 1024px; */
-/*     width: 100%; */
-/*     height: auto; */
-/*     position: fixed; */
-/*     top: 0; */
-/*     left: 0; */
-/* } */
-
-.copyleft{
-    height: 15px;
-    margin-bottom: -2px;
+.pagination{
+    text-align: center;
 }
+
+.pagination a {
+    padding: 5px;
+}
+
+.pagination span {
+    padding: 5px;
+}
+
+.pagination span.active {
+    padding: 5px;
+    background: #efefef;
+}
+
+
+
 /* Layout Styles */
 /* ----------------------------------------------------------*/
 
 /* Site header */
 
 .site-header {
-    border-bottom: 1px solid #333;
+    border-bottom: 3px solid #E34C61;
     min-height: 56px;
-    /* background-color: #000; */
+    background-color: #111;
+    color: #ebebeb;
 }
 
 
@@ -116,6 +132,7 @@ b, strong {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     font-weight: bold;
+    font-size: 16px;
 }
 
 /* Site footer */
@@ -123,7 +140,7 @@ b, strong {
 .site-footer {
     padding: 30px 0;
     text-align: center;
-    border-top: 1px solid #333;
+    border-top: 1px solid #E34C61;
 }
 
 .footer-heading {
@@ -201,17 +218,20 @@ b, strong {
 
 .heading{
     text-align: center;
-    padding: 60px;
-    background-image: url(../img/background.jpg);
+    padding: 50px;
+    background-image: url(../img/background4.jpg);
+    background-color: rgba(0,0,0, 0.5) ;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     border-bottom: 1px solid #333;
+
 }
 
 .heading h2{
     margin-bottom: 60px;
     font-style: italic;
+    color: #fff;
 }
 
 .heading p{
@@ -236,9 +256,13 @@ b, strong {
 .posts li { margin-bottom: 30px; }
 
 .posts .post-link {
-    font-size: 24px;
-    letter-spacing: -1px;
+    font-size: 30px;
     line-height: 1;
+}
+
+.posts p{
+
+    margin-top: 10px;
 }
 
 .posts .post-date {
@@ -262,23 +286,23 @@ b, strong {
 
 .post h1{
     font-size: 25px;
-    text-align: center;
+    text-align: left;
 }
 
 .post-header { margin: 10px 0 30px; }
 
 .post-header h1 {
-    font-size: 42px;
+    font-size: 40px;
     letter-spacing: -1.75px;
     line-height: 1;
-    font-weight: 300;
+    font-weight: 700;
 }
 
 .post-header .meta {
     font-size: 15px;
     color: #818181;
     margin-top: 5px;
-    text-align: center;
+    text-align: left;
 }
 
 .post-content { margin: 0 0 30px; }
@@ -293,12 +317,12 @@ b, strong {
 .post-content h5,
 .post-content h6 {
     line-height: 1;
-    font-weight: 300;
+    font-weight: 700;
     margin: 30px 0;
 }
 
 .post-content h2 {
-    font-size: 32px;
+    font-size: 30px;
     letter-spacing: -1.25px;
 }
 
@@ -320,6 +344,41 @@ b, strong {
     letter-spacing: -1px;
     font-style: italic;
     margin: 30px 0;
+}
+
+.row-photo {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column-photo {
+  flex: 33%;
+  max-width: 32%;
+  padding: 0 4px;
+}
+
+.column-photo a img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column-photo {
+    flex: 50%;
+    max-width: 48%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 640px) {
+  .column-photo {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
 
 .post-content ul,
@@ -360,7 +419,7 @@ b, strong {
 .post pre.terminal code { background-color: #333; }
 
 .full-width{
-    width: 960px;
+    width: 800px;
 }
 
 /* media queries */

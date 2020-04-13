@@ -17,9 +17,8 @@ but I added some features to the language that I think are worth exploring:
 * Code reuse through composition instead of inheritance. Deep hierarchies often are a source of incidental complexity.
 * Unix friendly: Its source code is stored in files, which is not the 'Smalltalk way', but this allow easy interaction with other Unix tools, like git, grep, IDE's/text editors etc..
 
-In my opinion Smalltalk ( and its cousin [Self](http://www.selflanguage.org/) ) are a very interesting
-programming languages. Seems that nowadays are relegated to niche/academic languages, due to
-some reasons beyond the scope of this article (although [Pharo](https://pharo.org/)
+In my opinion Smalltalk and its cousin [Self](http://www.selflanguage.org/) are very interesting
+programming languages. Seems that nowadays are relegated to niche languages, due to reasons beyond the scope of this article (although [Pharo](https://pharo.org/)
 has a quite active community), nevertheless, I think we can still learn a lot from this 'old' technologies.
 
 Contributions are very much welcome. Just open a pull request or an issue in Github :)

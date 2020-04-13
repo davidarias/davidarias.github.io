@@ -1,9 +1,9 @@
 # Site settings
 title: "{ David Arias }"
-email: your-email@domain.com
+email: arias1011@gmail.com
 description: "Personal site of David Arias"
 baseurl: ""
-url: "http://yourdomain.com"
+url: "https://www.davidarias.net"
 twitter_username: DarthCoder1011
 github_username:  davidarias
 instagram_username: darthcoder1010
@@ -12,3 +12,7 @@ instagram_username: darthcoder1010
 markdown: kramdown
 permalink: pretty
 future: True
+paginate: 5
+paginate_path: "/blog/page/:num/"
+
+gems: [jekyll-paginate]
