@@ -1,0 +1,51 @@
+I"f<p>The first version of the Jupiter’s garbage collector was very simple. When a new object
+needed to be allocated, I just called the <em>new</em> operator, and when it was time to be
+collected <em>delete</em>. The gc phase triggered when a fixed amount of objects were allocated.
+As you can imagine, this have a terrible performance.</p>
+
+<h3 id="easy-optimizations">Easy optimizations</h3>
+
+<p>First I added a pool of objects that is preallocated at the start of the virtual machine with
+a relatively large number (at the moment 16000). This way most of the time I don’t need to ask for
+new memory, I just get it from the pool. Also short lived objects are returned quickly to the pool.</p>
+
+<p>This alone increased the performance by a ~130% in some cases where a lot of garbage
+is generated.</p>
+
+<p>Also, I had a std::list to keep track of the allocated objects, but std::list has
+bery bad performance. Initialy I used this container because in the sweep phase I needed to
+remove objects from this list, and removing an element in the middle of a std::vector is very
+non-performant. I solved this using two std::vectors alternatively, a <code class="language-plaintext highlighter-rouge">from</code> vector
+and a <code class="language-plaintext highlighter-rouge">to</code> vector. When an object is created is pushed to <code class="language-plaintext highlighter-rouge">from</code>. In the sweep phase I iterate
+the <code class="language-plaintext highlighter-rouge">from</code> vector, if the objects is marked ( it survives ) is pushed to the  <code class="language-plaintext highlighter-rouge">to</code> vector, else
+the object is released into the pool. When the sweep phase finish, I clear the <code class="language-plaintext highlighter-rouge">from</code> vector
+and swap the <code class="language-plaintext highlighter-rouge">from</code> and  <code class="language-plaintext highlighter-rouge">to</code> (now new objects are pushed to the <code class="language-plaintext highlighter-rouge">to</code> vector). In the next
+collection cycle the roles of <code class="language-plaintext highlighter-rouge">from</code> and <code class="language-plaintext highlighter-rouge">to</code> are inverted.</p>
+
+<p>This increased the performance by another ~130%</p>
+
+<h3 id="generational-gc">Generational GC</h3>
+
+<p>The mark phase is the most critical (and slow) phase of the collection. To keep it simple
+for the moment I just used two generations: <code class="language-plaintext highlighter-rouge">young</code> and <code class="language-plaintext highlighter-rouge">tenured</code> that are signaled by a Boolean
+in all objects. When an object survives a collection cycle is marked as tenured.</p>
+
+<p>Having objects separated in two groups (generations) allows me to divide the mark phase in two:
+A minor collection and a mayor collection. In the minor collection I just mark &amp; sweep <code class="language-plaintext highlighter-rouge">young</code> objects,
+while in the mayor collection I mark &amp; sweep all. Right now I do a mayor collection after 10 minor collections
+are executed.</p>
+
+<p>This the increased the performance a bit ( between 50% - 70% ). It works specially well
+when big arrays are used. The array usually survives the first collection cycle, so in the next 10
+collection cycles the array and all of its elements are skip.</p>
+
+<p>You can check more about advantages of generational GC’s here: <a href="https://en.wikipedia.org/wiki/Tracing_garbage_collection#Generational_GC_(ephemeral_GC)">Generational GC in Wikipedia</a></p>
+
+<h3 id="future-work">Future work</h3>
+
+<p>Right now the memory for the objects is very fragmented, although I suspect the standard allocation library
+does a good job allocating a lot of similar objects (probably with memory pools), I’d like to
+experiment with copying GC strategies and allocating objects from a big continuous chunk of memory.</p>
+
+<p>Thanks for reading!</p>
+:ET

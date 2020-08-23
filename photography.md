@@ -5,6 +5,15 @@ permalink: /photography/
 ---
 <div class="row-photo">
 	<div class="column-photo">
+		<a href="{{ site.baseurl }}/assets/photos/DSC06342_04.jpg">
+			<img src="{{ site.baseurl }}/assets/photos/DSC06342_04.jpg">
+		</a>
+		<a href="{{ site.baseurl }}/assets/photos/DSC07020_04.jpg">
+			<img src="{{ site.baseurl }}/assets/photos/DSC07020_04.jpg">
+		</a>
+		<a href="{{ site.baseurl }}/assets/photos/DSC06147_03.jpg">
+			<img  src="{{ site.baseurl }}/assets/photos/DSC06147_03.jpg">
+		</a>
 		<a href="{{ site.baseurl }}/assets/photos/DSC05893_02.jpg">
 			<img  src="{{ site.baseurl }}/assets/photos/DSC05893_02.jpg">
 		</a>
@@ -20,11 +29,15 @@ permalink: /photography/
 		<a href="{{ site.baseurl }}/assets/photos/DSC05444_03.jpg">
 			<img src="{{ site.baseurl }}/assets/photos/DSC05444_03.jpg">
 		</a>
-		<a href="{{ site.baseurl }}/assets/photos/DSC05609.jpg">
-			<img src="{{ site.baseurl }}/assets/photos/DSC05609.jpg">
-		</a>
+
 	</div>
 	<div class="column-photo">
+		<a href="{{ site.baseurl }}/assets/photos/DSC07087_04.jpg">
+			<img src="{{ site.baseurl }}/assets/photos/DSC07087_04.jpg">
+		</a>
+		<a href="{{ site.baseurl }}/assets/photos/castillo_de_caudilla.jpg">
+			<img src="{{ site.baseurl }}/assets/photos/castillo_de_caudilla.jpg">
+		</a>
 		<a href="{{ site.baseurl }}/assets/photos/DSC05823_02.jpg">
 			<img src="{{ site.baseurl }}/assets/photos/DSC05823_02.jpg">
 		</a>
@@ -43,10 +56,17 @@ permalink: /photography/
 		<a href="{{ site.baseurl }}/assets/photos/DSC05056.jpg">
 			<img src="{{ site.baseurl }}/assets/photos/DSC05056.jpg">
 		</a>
+
 	</div>
 	<div class="column-photo">
+		<a href="{{ site.baseurl }}/assets/photos/DSC06943.jpg">
+			<img src="{{ site.baseurl }}/assets/photos/DSC06943.jpg">
+		</a>
 		<a href="{{ site.baseurl }}/assets/photos/DSC04742_03.jpg">
 			<img src="{{ site.baseurl }}/assets/photos/DSC04742_03.jpg">
+		</a>
+		<a href="{{ site.baseurl }}/assets/photos/DSC06495 - DSC06513_fused.jpg">
+			<img src="{{ site.baseurl }}/assets/photos/DSC06495 - DSC06513_fused.jpg">
 		</a>
 		<a href="{{ site.baseurl }}/assets/photos/DSC05641.jpg">
 			<img src="{{ site.baseurl }}/assets/photos/DSC05641.jpg">

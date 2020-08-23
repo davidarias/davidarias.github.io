@@ -1,0 +1,25 @@
+I"F<p>In January I published <strong><a href="https://github.com/davidarias/Jupiter">Jupiter</a></strong>,
+a programming language based on Smalltalk. One of its main features
+is the ‘Unix Friendly’ philosophy, meaning, its source code is stored in plain text files, which is
+not usual in the Smalltalk world.</p>
+
+<p>The plain text source files offers some interesting advantages like
+integration with version control system (git, mercurial, etc…) and the posibility
+of use any text editor, but all of the existing source code editors are optimized to
+edit large files with lots of code entities, and Jupiter only allows one method
+per file, so using those editors, while it is perfectly posible, is not the ideal
+development environment.</p>
+
+<p>This is why I created <a href="https://github.com/davidarias/juno">Juno</a>, a Smalltak-like IDE for Jupiter.
+A picture is worth a thousand words:</p>
+
+<p><img src="https://raw.githubusercontent.com/davidarias/juno/master/Screenshot.png" alt="screenshot" class="full-width" /></p>
+
+<p>Another advantage of using simple text files is that I can use any technology for interaction with
+the source of Jupiter, this way I could develop Juno with existing GUI tools ( I used Electron
+and React ). In the Long-term view, the idea would be create an IDE using Jupiter, but since is a new
+programming language, I lack of the tools needed for this task. In the meantime, while Jupiter grows,
+I can use an IDE that feels like a real Smalltalk environment.</p>
+
+<p>As always, contributions are very much welcome. Just open a pull request or an issue in Github :)</p>
+:ET

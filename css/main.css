@@ -9,16 +9,16 @@
 html, body { height: 100%; }
 
 body {
-    font-family: 'Lato', Helvetica, Arial, sans-serif;
-    font-size: 18px;
+    font-family: 'Monda', Helvetica, Arial, sans-serif;
+    font-size: 16px;
     line-height: 1.5;
     font-weight: 300;
     background-color: #f4f4f4;
-    color: rgba(0,0,0, 0.8);
+    color: rgba(0,0,0, 0.7);
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Exo', sans-serif;
     font-size: 100%;
     font-weight: 700;
     color: #111;
@@ -129,7 +129,7 @@ b, strong {
 .site-nav .page-link {
     margin-right: 10px;
     letter-spacing: -.5px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Exo', sans-serif;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 16px;
@@ -240,6 +240,7 @@ b, strong {
     margin-bottom: 60px;
     font-style: italic;
     color: #fff;
+    font-size: 20px;
 }
 
 .heading p{
@@ -281,7 +282,7 @@ b, strong {
 }
 
 .posts .post-date {
-    font-size: 15px;
+    font-size: 14px;
     color: #818181;
     margin: 0 10px 0 0;
     float: left;
